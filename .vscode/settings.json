@@ -1,6 +1,4 @@
 {
-  "editor.fontSize": 14,
-  "terminal.integrated.fontSize": 14,
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveForeground": "#e7e7e799",
