@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "legato:build:production",
+            "firebaseProject": "cogentx-360ai-app",
+            "firebaseHostingSite": "cogentx-360ai-app"
+          }
         }
       }
     }

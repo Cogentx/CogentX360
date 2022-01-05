@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cogentx-360ai-app": {
+      "hosting": {
+        "legato": [
+          "cogentx-360ai-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cogentx-360ai-app"
+  }
+}
