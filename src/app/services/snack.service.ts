@@ -13,8 +13,8 @@ export class SnackService {
     private snackBar: MatSnackBar, 
     private router: Router) { }
 
-  authError() {
-    this.snackBar.open('Please Login to Access', 'OK', {
+  authError(msg?: string) {
+    this.snackBar.open(msg || 'Please Login to Access', 'OK', {
       duration: 5000
     });
 

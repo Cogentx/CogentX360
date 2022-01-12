@@ -20,7 +20,7 @@ export class AuthGuard implements CanActivate {
     const isLoggedin = !!user;
 
     if (!isLoggedin) {
-      this.snackBar.authError();
+      this.snackBar.authError('Please Login to Access');
     }
     
     return isLoggedin;
