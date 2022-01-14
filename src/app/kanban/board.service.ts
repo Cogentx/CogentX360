@@ -5,7 +5,7 @@ import { Auth, authState } from '@angular/fire/auth';
 import firebase from "firebase/compat/app";
 import { AngularFirestore } from "@angular/fire/compat/firestore";
 // Firebase v9 modular code
-// import { Firestore, collection, doc } from '@angular/fire/firestore';
+// import { Firestore, collection, doc, arrayRemove } from '@angular/fire/firestore';
 import { switchMap, map } from "rxjs/operators";
 import { Board, Task } from './board.model';
 
