@@ -16,12 +16,14 @@ export class AuthGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Promise<boolean> {
     
-    const user = await this.auth.currentUser;
-    const isLoggedin = !!user;
+    let isLoggedin = false;
 
-    if (!isLoggedin) {
-      this.snackBar.authError('Please Login to Access');
-    }
+    // wrap in Arrow Function to avoid invalid Null
+    const user = () => this.auth.currentUser;
+
+    isLoggedin = !!user;
+
+    !isLoggedin && this.snackBar.authError('Please Login to Access');
     
     return isLoggedin;
   }
