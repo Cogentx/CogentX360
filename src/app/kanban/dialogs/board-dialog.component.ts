@@ -6,9 +6,9 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   template: `
     <h1 mat-dialog-title>Boards</h1>
     <div mat-dialog-content>
-      <p>What shall we call this board?</p>
+      <p>Enter Board Name...</p>
       <mat-form-field>
-        <input matInput [(ngModel)]="data.title" )] placeholder="title" />
+        <input matInput [(ngModel)]="data.title" placeholder="title" />
       </mat-form-field>
     </div>
     <div mat-dialog-actions>
